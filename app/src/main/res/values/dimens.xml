@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="email_list_item_vertical_spacing">8dp</dimen>
+</resources>

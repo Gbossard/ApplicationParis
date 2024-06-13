@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Application Paris</string>
+
+    <string name="tab_restaurants">Restaurants</string>
+    <string name="tab_coffee">Coffee Shop</string>
+    <string name="tab_museum">Museum</string>
+    <string name="tab_park">Park</string>
+    <string name="tab_shopping">Shopping</string>
+
+    <string name="category_food_coreen">Coréen</string>
+    <string name="category_food_asiatique">Asiatique</string>
+    <string name="category_food_japonais">Japonais</string>
+
+    <string name="place_1_name">Jantchi</string>
+    <string name="place_1_description">Situé en plein cœur de Paris, dans le quartier animé de Pyramides, JanTchi propose une cuisine coréenne familiale généreuse et de qualité, dans un cadre calme et reposant. </string>
+    <string name="place_1_address">6 rue Thérèse, 75001 Paris</string>
+
+    <string name="place_2_name">Le refuge</string>
+    <string name="place_2_description">Un coffee shop d\'exception</string>
+    <string name="place_2_address">FHEFHKE</string>
+</resources>
