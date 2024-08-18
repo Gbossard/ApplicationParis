@@ -7,16 +7,14 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.AddCircle
-import androidx.compose.material.icons.rounded.Favorite
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.example.applicationparis.R
 import com.example.applicationparis.data.MenuItemType
@@ -33,12 +31,12 @@ fun ParisHomeScreen(
     val navigationItemContentList = listOf(
         NavigationItemContent(
             menuItemType = MenuItemType.RESTAURANT,
-            icon = Icons.Rounded.Favorite,
+            icon = painterResource(R.drawable.local_dining_24dp),
             text = stringResource(id = R.string.tab_restaurants)
         ),
         NavigationItemContent(
             menuItemType = MenuItemType.COFFEE,
-            icon = Icons.Rounded.AddCircle,
+            icon = painterResource(R.drawable.local_cafe_24dp),
             text = stringResource(id = R.string.tab_coffee)
         )
     )
@@ -99,7 +97,7 @@ fun ParisBottomAppBar(
                 onClick = { onTabPressed(navItem.menuItemType) },
                 icon = {
                     Icon(
-                        imageVector = navItem.icon,
+                        painter = navItem.icon,
                         contentDescription = navItem.text
                     )
                 }
@@ -110,6 +108,6 @@ fun ParisBottomAppBar(
 
 data class NavigationItemContent(
     val menuItemType: MenuItemType,
-    val icon: ImageVector,
+    val icon: Painter,
     val text: String
 )
