@@ -64,5 +64,10 @@ val md_theme_dark_surfaceTint = Color(0xFF41D6FF)
 val md_theme_dark_outlineVariant = Color(0xFF40484B)
 val md_theme_dark_scrim = Color(0xFF000000)
 
+val coreen_color = Color(0xFF1D5BA5)
+val asian_color = Color(0xFFC22A2A)
+val italian_color = Color(0xFF3F9436)
+val coffee_shop_color = Color(0xFF753308)
+
 
 val seed = Color(0xFF00CFFA)
