@@ -3,6 +3,7 @@ package com.example.applicationparis.data
 import com.example.applicationparis.R
 import com.example.applicationparis.ui.theme.asian_color
 import com.example.applicationparis.ui.theme.balinese_color
+import com.example.applicationparis.ui.theme.coffee_shop_color
 import com.example.applicationparis.ui.theme.coreen_color
 import com.example.applicationparis.ui.theme.hawaiian_color
 import com.example.applicationparis.ui.theme.italian_color
@@ -142,13 +143,24 @@ object LocalPlacesDataProvider {
                 )
             )
         ),
+
+
+
+
+
         Place(
             id = 8L,
             name = R.string.place_9_name,
             description = R.string.place_9_description,
             address = R.string.place_9_address,
-            photo = R.drawable.jantchi_coreen,
+            photo = R.drawable.annettek_coffee_shop,
             placeCategory = MenuItemType.COFFEE,
+            category = listOf(
+                Category(
+                    category = R.string.tab_coffee,
+                    color = coffee_shop_color
+                )
+            )
         )
     )
 

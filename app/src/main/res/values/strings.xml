@@ -49,7 +49,11 @@
     <string name="place_8_description">Kodawari Ramen est une chaîne de restaurants spécialisée dans le ramen, un plat populaire du Japon. Découvrez son univers immersif, ses produits de qualité et ses distinctions prestigieuses.</string>
     <string name="place_8_address">29 rue Mazarine, 75006 Paris</string>
 
-    <string name="place_9_name">Le refuge</string>
-    <string name="place_9_description">Un coffee shop d\'exception</string>
-    <string name="place_9_address">FHEFHKE</string>
+
+
+
+
+    <string name="place_9_name">Annette K</string>
+    <string name="place_9_description">ANNETTE K. est un bateau transformé en club de sport, de santé et de loisirs, situé sur la Seine à Paris. Découvrez sa piscine plein air, son coffee shop, son club, ses événements et ses services.</string>
+    <string name="place_9_address">Port de Javel Bas, 75015 Paris</string>
 </resources>
