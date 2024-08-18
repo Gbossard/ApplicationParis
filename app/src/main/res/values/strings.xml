@@ -7,15 +7,49 @@
     <string name="tab_park">Park</string>
     <string name="tab_shopping">Shopping</string>
 
-    <string name="category_food_coreen">Coréen</string>
-    <string name="category_food_asiatique">Asiatique</string>
-    <string name="category_food_japonais">Japonais</string>
+    <string name="category_food_korean">Coréen</string>
+    <string name="category_food_asian">Asiatique</string>
+    <string name="category_food_japanese">Japonais</string>
+    <string name="category_food_italian">Italien</string>
+    <string name="category_food_mexican">Mexicain</string>
+    <string name="category_food_hawaiian">Hawaiien</string>
+    <string name="category_food_balinese">Balinais</string>
 
     <string name="place_1_name">Jantchi</string>
     <string name="place_1_description">Situé en plein cœur de Paris, dans le quartier animé de Pyramides, JanTchi propose une cuisine coréenne familiale généreuse et de qualité, dans un cadre calme et reposant. </string>
     <string name="place_1_address">6 rue Thérèse, 75001 Paris</string>
 
-    <string name="place_2_name">Le refuge</string>
-    <string name="place_2_description">Un coffee shop d\'exception</string>
-    <string name="place_2_address">FHEFHKE</string>
+    <string name="place_2_name">Pink Mamma</string>
+    <string name="place_2_description">Pink Mamma est un restaurant italien sur quatre étages dans le 9ème, à Pigalle. Verrière avec vue sur les toits de Paris et bar caché vous attendent pour la soirée !</string>
+    <string name="place_2_address">20bis Rue de Douai, 75009 Paris</string>
+
+    <string name="place_3_name">Mamma Primi</string>
+    <string name="place_3_description">Mamma Primi est notre petit bijou de restaurant italien dans le quartier des Batignolles, à Paris. Là-bas, on s\'installe en terrasse et on commande son assiette de gnocchi avec un petit vino toscan - un combo qui rend la vie plus douce.</string>
+    <string name="place_3_address">18 Rue Boursault, 75017 Paris</string>
+
+    <string name="place_4_name">Tigermilk South Pigalle</string>
+    <string name="place_4_description">Les restaurants Tigermilk sont des haciendas chaleureuses servant une cuisine aux accents mexicains et des cocktails. Tout est fait sur place à base de produits frais, à Paris, Bruxelles, Lille, Bordeaux et Lyon.</string>
+    <string name="place_4_address">72 Rue du Faubourg Montmartre, 75009 Paris</string>
+
+    <string name="place_5_name">Karaage-Ya</string>
+    <string name="place_5_description">Le karaage est une technique de la cuisine japonaise dans laquelle des ingrédients variés (du poulet est le plus populaire) sont frits dans un bain d’huile. Les ingrédients sont préalablement découpés en petits morceaux et marinés dans de la sauce soja, de l’ail, du gingembre.</string>
+    <string name="place_5_address">6 Rue Feydeau, 75002 Paris</string>
+
+    <string name="place_6_name">Hawaiian Poké</string>
+    <string name="place_6_description">Entrez dans l’univers de deux frères Hawaiiens passionnés de cuisine du monde. HAWAIIAN POKE vous offre un voyage culinaire vers Hawaï.
+    C’est l’histoire de Paul et Eddy, qui ont pour passion commune la cuisine, la restauration, les saveurs, et l’amour du pays de leurs ancêtres : HAWAÏ.
+    Après 3 ans aux Etats-Unis et à Hawaï pour parfaire leurs connaissances et leurs techniques de cuisiniers ; ils reviennent en France avec un patrimoine culinaire et un savoir-faire authentique pour vous proposer des plats typiques hawaïens.Les frères HINPAPHANH vous invitent dans leur restaurant à Paris : un vrai concept qui vous transportera le temps d’un repas avec : vos amis, votre famille, vos collègues et/ou votre cher(e) et tendre.</string>
+    <string name="place_6_address">152 rue Montmartre, 75002 Paris</string>
+
+    <string name="place_7_name">Djakarta Bali</string>
+    <string name="place_7_description">Découvrez la gastronomie et les danses de l\'Indonésie dans un décor ethnique et chic près du Louvre. Le Djakarta Bali vous propose des spécialités de Java, Sumatra et Bali, ainsi qu\'un menu dégustation et des événements privés.</string>
+    <string name="place_7_address">9 rue Vauvilliers, 75001 Paris</string>
+
+    <string name="place_8_name">Kodawari Ramen</string>
+    <string name="place_8_description">Kodawari Ramen est une chaîne de restaurants spécialisée dans le ramen, un plat populaire du Japon. Découvrez son univers immersif, ses produits de qualité et ses distinctions prestigieuses.</string>
+    <string name="place_8_address">29 rue Mazarine, 75006 Paris</string>
+
+    <string name="place_9_name">Le refuge</string>
+    <string name="place_9_description">Un coffee shop d\'exception</string>
+    <string name="place_9_address">FHEFHKE</string>
 </resources>
