@@ -14,6 +14,7 @@
     <string name="category_food_mexican">Mexicain</string>
     <string name="category_food_hawaiian">Hawaiien</string>
     <string name="category_food_balinese">Balinais</string>
+    <string name="category_food_brunch">Brunch</string>
 
     <string name="place_1_name">Jantchi</string>
     <string name="place_1_description">Situé en plein cœur de Paris, dans le quartier animé de Pyramides, JanTchi propose une cuisine coréenne familiale généreuse et de qualité, dans un cadre calme et reposant. </string>
@@ -56,4 +57,8 @@
     <string name="place_9_name">Annette K</string>
     <string name="place_9_description">ANNETTE K. est un bateau transformé en club de sport, de santé et de loisirs, situé sur la Seine à Paris. Découvrez sa piscine plein air, son coffee shop, son club, ses événements et ses services.</string>
     <string name="place_9_address">Port de Javel Bas, 75015 Paris</string>
+
+    <string name="place_10_name">O Coffee</string>
+    <string name="place_10_description">Notre café est torréfié à Paris. Notre équipe vous accueille avec le sourire parce qu’il fait toujours beau chez O Coffee. Grand classique australien, le café crème par excellence, mélange de notre “O Blend” et de lait frais français, pour vous donner le sourire.</string>
+    <string name="place_10_address">23 rue de Lourmel, 75015 Paris</string>
 </resources>

@@ -72,6 +72,7 @@ val mexican_color = Color(0xFF315728)
 val hawaiian_color = Color(0xFF0B8376)
 val balinese_color = Color(0xFFB4B105)
 val coffee_shop_color = Color(0xFF753308)
+val brunch_color = Color(0xFF033B55)
 
 
 val seed = Color(0xFF00CFFA)
