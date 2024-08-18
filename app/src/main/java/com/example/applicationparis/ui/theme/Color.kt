@@ -65,8 +65,12 @@ val md_theme_dark_outlineVariant = Color(0xFF40484B)
 val md_theme_dark_scrim = Color(0xFF000000)
 
 val coreen_color = Color(0xFF1D5BA5)
-val asian_color = Color(0xFFC22A2A)
+val asian_color = Color(0xFF6D241B)
+val japanese_color = Color(0xFFF83535)
 val italian_color = Color(0xFF3F9436)
+val mexican_color = Color(0xFF315728)
+val hawaiian_color = Color(0xFF0B8376)
+val balinese_color = Color(0xFFB4B105)
 val coffee_shop_color = Color(0xFF753308)
 
 
