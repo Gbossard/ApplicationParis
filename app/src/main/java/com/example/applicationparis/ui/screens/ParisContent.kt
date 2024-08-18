@@ -17,15 +17,14 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.applicationparis.R
@@ -126,14 +125,16 @@ fun ParisListItem(
                 Text(
                     text = stringResource(place.address),
                     fontSize = 14.sp,
-                    fontWeight = FontWeight.W300
+                    fontWeight = FontWeight.W300,
+                    overflow = TextOverflow.Ellipsis,
+                    maxLines = 1
                 )
                 Row(
                     modifier = Modifier.padding(top = 4.dp)
                 ) {
                     place.category.forEach {
                         Text(
-                            text = stringResource(it),
+                            text = stringResource(it.category),
                             color = MaterialTheme.colorScheme.primaryContainer,
                             fontSize = 12.sp,
                             fontWeight = FontWeight.W200,
@@ -141,7 +142,7 @@ fun ParisListItem(
                                 .padding(end = 8.dp)
                                 .clip(RoundedCornerShape(16.dp))
                                 .alpha(1f)
-                                .background(color = MaterialTheme.colorScheme.onPrimaryContainer)
+                                .background(color = it.color)
                                 .padding(horizontal = 8.dp, vertical = 4.dp)
                         )
                     }
