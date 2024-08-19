@@ -42,7 +42,7 @@ fun ParisListOnlyContent(
     LazyColumn(
         modifier = modifier,
         verticalArrangement = Arrangement.spacedBy(
-            dimensionResource(R.dimen.email_list_item_vertical_spacing)
+            dimensionResource(R.dimen.place_list_item_vertical_spacing)
         )
     ) {
         item {
