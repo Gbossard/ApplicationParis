@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Application Paris</string>
 
+    <string name="navigation_back">Retour</string>
+
     <string name="tab_restaurants">Restaurants</string>
     <string name="tab_coffee">Coffee Shop</string>
     <string name="tab_museum">Museum</string>
