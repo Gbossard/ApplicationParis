@@ -37,6 +37,15 @@ class ParisViewModel: ViewModel() {
         }
     }
 
+    fun updatesDetailsScreenStates(place: Place) {
+        _uiState.update {
+            it.copy(
+                currentSelectedPlace = place,
+                isShowingHomepage = false
+            )
+        }
+    }
+
     fun resetHomeScreenStates() {
         _uiState.update {
             it.copy(
