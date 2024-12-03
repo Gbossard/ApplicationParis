@@ -6,6 +6,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.applicationparis.data.MenuItemType
+import com.example.applicationparis.data.Place
 import com.example.applicationparis.model.ParisViewModel
 import com.example.applicationparis.ui.screens.ParisHomeScreen
 import com.example.applicationparis.ui.utils.ParisNavigationType
@@ -32,6 +33,15 @@ fun ParisApp(
         parisUiState = parisUiState,
         onTabPressed = { menuItemType: MenuItemType ->
             viewModel.updateCurrentScreen(menuItemType = menuItemType)
+            viewModel.resetHomeScreenStates()
+        },
+        onPlaceCardPressed = { place: Place ->
+            viewModel.updatesDetailsScreenStates(
+                place = place
+            )
+
+        },
+        onDetailsScreenBackPressed = {
             viewModel.resetHomeScreenStates()
         },
         modifier = modifier

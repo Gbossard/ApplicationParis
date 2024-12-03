@@ -18,6 +18,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.example.applicationparis.R
 import com.example.applicationparis.data.MenuItemType
+import com.example.applicationparis.data.Place
 import com.example.applicationparis.ui.ParisUiState
 import com.example.applicationparis.ui.utils.ParisNavigationType
 
@@ -26,6 +27,8 @@ fun ParisHomeScreen(
     navigationType: ParisNavigationType,
     parisUiState: ParisUiState,
     onTabPressed: (MenuItemType) -> Unit,
+    onPlaceCardPressed: (Place) -> Unit,
+    onDetailsScreenBackPressed: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val navigationItemContentList = listOf(
@@ -40,13 +43,23 @@ fun ParisHomeScreen(
             text = stringResource(id = R.string.tab_coffee)
         )
     )
-    ParisAppContent(
-        navigationType = navigationType,
-        parisUiState = parisUiState,
-        onTabPressed = onTabPressed,
-        navigationItemContentList = navigationItemContentList,
-        modifier = modifier
-    )
+    if (parisUiState.isShowingHomepage) {
+        ParisAppContent(
+            navigationType = navigationType,
+            parisUiState = parisUiState,
+            onTabPressed = onTabPressed,
+            onPlaceCardPressed = onPlaceCardPressed,
+            navigationItemContentList = navigationItemContentList,
+            modifier = modifier
+        )
+    } else {
+        ParisDetailsScreen(
+            parisUiState = parisUiState,
+            onBackPressed = onDetailsScreenBackPressed,
+            modifier = modifier,
+            isFullScreen = true
+        )
+    }
 }
 
 @Composable
@@ -54,6 +67,7 @@ fun ParisAppContent(
     navigationType: ParisNavigationType,
     parisUiState: ParisUiState,
     onTabPressed: (MenuItemType) -> Unit,
+    onPlaceCardPressed: (Place) -> Unit,
     navigationItemContentList: List<NavigationItemContent>,
     modifier: Modifier = Modifier
 ) {
@@ -66,6 +80,7 @@ fun ParisAppContent(
             ) {
                     ParisListOnlyContent(
                         parisUiState = parisUiState,
+                        onPlaceCardPressed = onPlaceCardPressed,
                         modifier = Modifier.weight(1f)
                     )
                 AnimatedVisibility(

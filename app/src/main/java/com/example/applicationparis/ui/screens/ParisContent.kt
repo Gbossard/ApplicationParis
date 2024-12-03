@@ -34,6 +34,7 @@ import com.example.applicationparis.ui.ParisUiState
 @Composable
 fun ParisListOnlyContent(
     parisUiState: ParisUiState,
+    onPlaceCardPressed: (Place) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val places = parisUiState.currentPlaces
@@ -55,7 +56,10 @@ fun ParisListOnlyContent(
             Column(modifier = Modifier.fillMaxWidth()) {
                 ParisListItem(
                     place = place,
-                    selected = true
+                    selected = true,
+                    onCardClick = {
+                        onPlaceCardPressed(place)
+                    }
                 )
             }
 
@@ -85,6 +89,7 @@ fun ParisTitleContent(
 fun ParisListItem(
     place: Place,
     selected: Boolean,
+    onCardClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Card(
@@ -96,12 +101,12 @@ fun ParisListItem(
                 MaterialTheme.colorScheme.secondaryContainer
             }
         ),
-        onClick = { /*TODO*/ }
+        onClick = onCardClick
     ) {
         Row(
             modifier = Modifier.fillMaxWidth()
         ) {
-            Column{
+            Column {
                 Image(
                     modifier = Modifier
                         .size(90.dp)
