@@ -51,6 +51,7 @@ class ParisViewModel: ViewModel() {
             it.copy(
                 currentSelectedPlace = it.places[it.currentScreens]?.get(0)
                     ?: LocalPlacesDataProvider.defaultPlace,
+                isShowingHomepage = true
             )
         }
     }

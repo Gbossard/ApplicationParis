@@ -68,7 +68,7 @@ fun ParisDetailsScreen(
 
 @Composable
 fun ParisDetailsScreenTopBar(
-    onBackButtonClicked: () -> Unit,
+    onBackButtonPressed: () -> Unit,
     parisUiState: ParisUiState,
     modifier: Modifier = Modifier
 ) {
@@ -81,7 +81,7 @@ fun ParisDetailsScreenTopBar(
         horizontalArrangement = Arrangement.Center
     ) {
         IconButton(
-            onClick = onBackButtonClicked,
+            onClick = onBackButtonPressed,
             modifier = Modifier
                 .background(MaterialTheme.colorScheme.primaryContainer, shape = CircleShape),
         ) {
