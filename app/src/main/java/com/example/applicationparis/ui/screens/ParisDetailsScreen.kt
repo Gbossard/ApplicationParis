@@ -55,16 +55,11 @@ fun ParisDetailsScreen(
                         parisUiState,
                         Modifier
                             .fillMaxWidth()
-                            .padding(bottom = dimensionResource(R.dimen.detail_topbar_padding_bottom))
                     )
                 }
                 ParisDetailsCard(
                     place = parisUiState.currentSelectedPlace,
-                    modifier = if (isFullScreen) {
-                        Modifier.padding(horizontal = dimensionResource(R.dimen.detail_card_outer_padding_horizontal))
-                    } else {
-                        Modifier.padding(0.dp)
-                    }
+                    modifier = Modifier.padding(0.dp)
                 )
             }
         }
