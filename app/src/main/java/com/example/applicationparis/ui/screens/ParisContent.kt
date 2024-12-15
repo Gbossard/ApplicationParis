@@ -93,6 +93,7 @@ fun ParisListItem(
     modifier: Modifier = Modifier
 ) {
     Card(
+        shape = RoundedCornerShape(16.dp),
         modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp),
         colors = CardDefaults.cardColors(
             containerColor = if (selected) {
@@ -125,6 +126,8 @@ fun ParisListItem(
                     text = stringResource(place.name),
                     fontSize = 22.sp,
                     fontWeight = FontWeight.W600,
+                    overflow = TextOverflow.Ellipsis,
+                    maxLines = 1,
                     color = MaterialTheme.colorScheme.secondary
                 )
                 Text(
@@ -140,7 +143,7 @@ fun ParisListItem(
                     place.category.forEach {
                         Text(
                             text = stringResource(it.category),
-                            color = MaterialTheme.colorScheme.primaryContainer,
+                            color = MaterialTheme.colorScheme.onPrimary,
                             fontSize = 12.sp,
                             fontWeight = FontWeight.W200,
                             modifier = Modifier
