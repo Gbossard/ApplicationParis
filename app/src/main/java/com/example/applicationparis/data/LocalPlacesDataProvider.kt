@@ -31,7 +31,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_korean,
                     color = coreen_color
                 )
-            )
+            ),
+            socialLink = R.string.place_1_social_link
         ),
         Place(
             id = 1L,

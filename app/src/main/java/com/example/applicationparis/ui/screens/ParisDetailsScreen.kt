@@ -1,5 +1,7 @@
 package com.example.applicationparis.ui.screens
 
+import android.content.Intent
+import android.net.Uri
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -15,6 +17,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -24,6 +27,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -143,6 +147,27 @@ fun ParisDetailsCard(
                 text = stringResource(place.description),
                 style = MaterialTheme.typography.bodyLarge
             )
+            ButtonToSocialMedia(stringResource(place.socialLink))
         }
+
+    }
+}
+
+@Composable
+fun ButtonToSocialMedia(
+    socialLink: String
+) {
+    val context = LocalContext.current
+    val webIntent: Intent = Uri.parse(socialLink).let { webpage ->
+        Intent(Intent.ACTION_VIEW, webpage)
+    }
+    Button(
+        modifier = Modifier
+            .fillMaxWidth(),
+        onClick = { context.startActivity(webIntent) }
+    ) {
+        Text(
+            text = stringResource(R.string.social_link),
+        )
     }
 }

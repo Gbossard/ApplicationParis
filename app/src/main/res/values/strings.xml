@@ -2,6 +2,7 @@
     <string name="app_name">Application Paris</string>
 
     <string name="navigation_back">Retour</string>
+    <string name="social_link">Site Web</string>
 
     <string name="tab_restaurants">Restaurants</string>
     <string name="tab_coffee">Coffee Shop</string>
@@ -21,6 +22,7 @@
     <string name="place_1_name">Jantchi</string>
     <string name="place_1_description">Situé en plein cœur de Paris, dans le quartier animé de Pyramides, JanTchi propose une cuisine coréenne familiale généreuse et de qualité, dans un cadre calme et reposant. </string>
     <string name="place_1_address">6 rue Thérèse, 75001 Paris</string>
+    <string name="place_1_social_link">https://www.instagram.com/jantchiparis/</string>
 
     <string name="place_2_name">Pink Mamma</string>
     <string name="place_2_description">Pink Mamma est un restaurant italien sur quatre étages dans le 9ème, à Pigalle. Verrière avec vue sur les toits de Paris et bar caché vous attendent pour la soirée !</string>

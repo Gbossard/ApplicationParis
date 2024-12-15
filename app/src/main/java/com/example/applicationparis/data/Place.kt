@@ -13,4 +13,5 @@ data class Place(
     @DrawableRes val photo: Int = -1,
     var placeCategory: MenuItemType = MenuItemType.RESTAURANT,
     @StringRes val category: List<Category> = emptyList(),
+    @StringRes val socialLink: Int = -1,
 )
