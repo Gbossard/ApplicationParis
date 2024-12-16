@@ -20,6 +20,8 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.material3.NavigationDrawerItemDefaults
+import androidx.compose.material3.NavigationRail
+import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.PermanentDrawerSheet
 import androidx.compose.material3.PermanentNavigationDrawer
 import androidx.compose.material3.Text
@@ -115,6 +117,13 @@ fun ParisAppContent(
 ) {
     Box(modifier = modifier) {
         Row(modifier = Modifier.fillMaxSize()) {
+            AnimatedVisibility(visible = navigationType == ParisNavigationType.NAVIGATION_RAIL) {
+                ParisNavigationRail(
+                    currentTab = parisUiState.currentScreens,
+                    onTabPressed = onTabPressed,
+                    navigationItemContentList = navigationItemContentList
+                )
+            }
             Column(
                 modifier = Modifier
                     .fillMaxSize()
@@ -141,7 +150,30 @@ fun ParisAppContent(
 }
 
 @Composable
-fun NavigationDrawerContent(
+private fun ParisNavigationRail(
+    currentTab: MenuItemType,
+    onTabPressed: ((MenuItemType) -> Unit),
+    navigationItemContentList: List<NavigationItemContent>,
+    modifier: Modifier = Modifier
+) {
+    NavigationRail(modifier = modifier) {
+        for (navItem in navigationItemContentList) {
+            NavigationRailItem(
+                selected = currentTab == navItem.menuItemType,
+                onClick = { onTabPressed(navItem.menuItemType) },
+                icon = {
+                    Icon(
+                        painter = navItem.icon,
+                        contentDescription = navItem.text
+                    )
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun NavigationDrawerContent(
     selectedDestination: MenuItemType,
     onTabPressed: ((MenuItemType) -> Unit),
     navigationItemContentList: List<NavigationItemContent>,
@@ -178,7 +210,7 @@ fun NavigationDrawerContent(
 }
 
 @Composable
-fun NavigationDrawerHeader(
+private fun NavigationDrawerHeader(
     modifier: Modifier = Modifier
 ) {
     Row(

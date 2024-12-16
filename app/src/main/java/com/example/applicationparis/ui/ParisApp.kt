@@ -24,6 +24,9 @@ fun ParisApp(
         WindowWidthSizeClass.Compact -> {
             navigationType = ParisNavigationType.BOTTOM_NAVIGATION
         }
+        WindowWidthSizeClass.Medium -> {
+            navigationType = ParisNavigationType.NAVIGATION_RAIL
+        }
         WindowWidthSizeClass.Expanded -> {
             navigationType = ParisNavigationType.PERMANENT_NAVIGATION_DRAWER
         }
