@@ -3,6 +3,7 @@
 
     <string name="navigation_back">Retour</string>
     <string name="social_link">Site Web</string>
+    <string name="logo">Logo</string>
 
     <string name="tab_restaurants">Restaurants</string>
     <string name="tab_coffee">Coffee Shop</string>

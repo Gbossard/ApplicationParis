@@ -1,21 +1,37 @@
 package com.example.applicationparis.ui.screens
 
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationDrawerItem
+import androidx.compose.material3.NavigationDrawerItemDefaults
+import androidx.compose.material3.PermanentDrawerSheet
+import androidx.compose.material3.PermanentNavigationDrawer
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import com.example.applicationparis.R
 import com.example.applicationparis.data.MenuItemType
 import com.example.applicationparis.data.Place
@@ -43,22 +59,48 @@ fun ParisHomeScreen(
             text = stringResource(id = R.string.tab_coffee)
         )
     )
-    if (parisUiState.isShowingHomepage) {
-        ParisAppContent(
-            navigationType = navigationType,
-            parisUiState = parisUiState,
-            onTabPressed = onTabPressed,
-            onPlaceCardPressed = onPlaceCardPressed,
-            navigationItemContentList = navigationItemContentList,
-            modifier = modifier
-        )
+    if (navigationType == ParisNavigationType.PERMANENT_NAVIGATION_DRAWER) {
+        PermanentNavigationDrawer(
+            drawerContent = {
+                PermanentDrawerSheet(Modifier.width(240.dp)) {
+                    NavigationDrawerContent(
+                        selectedDestination = parisUiState.currentScreens,
+                        onTabPressed = onTabPressed,
+                        navigationItemContentList = navigationItemContentList,
+                        modifier = Modifier
+                            .wrapContentWidth()
+                            .fillMaxHeight()
+                            .background(MaterialTheme.colorScheme.inverseOnSurface)
+                    )
+                }
+            }
+        ) {
+            ParisAppContent(
+                navigationType = navigationType,
+                parisUiState = parisUiState,
+                onTabPressed = onTabPressed,
+                onPlaceCardPressed = onPlaceCardPressed,
+                navigationItemContentList = navigationItemContentList
+            )
+        }
     } else {
-        ParisDetailsScreen(
-            parisUiState = parisUiState,
-            onBackPressed = onDetailsScreenBackPressed,
-            modifier = modifier,
-            isFullScreen = true
-        )
+        if (parisUiState.isShowingHomepage) {
+            ParisAppContent(
+                navigationType = navigationType,
+                parisUiState = parisUiState,
+                onTabPressed = onTabPressed,
+                onPlaceCardPressed = onPlaceCardPressed,
+                navigationItemContentList = navigationItemContentList,
+                modifier = modifier
+            )
+        } else {
+            ParisDetailsScreen(
+                parisUiState = parisUiState,
+                onBackPressed = onDetailsScreenBackPressed,
+                modifier = modifier,
+                isFullScreen = true
+            )
+        }
     }
 }
 
@@ -96,6 +138,70 @@ fun ParisAppContent(
             }
         }
     }
+}
+
+@Composable
+fun NavigationDrawerContent(
+    selectedDestination: MenuItemType,
+    onTabPressed: ((MenuItemType) -> Unit),
+    navigationItemContentList: List<NavigationItemContent>,
+    modifier: Modifier = Modifier
+) {
+    Column(modifier = modifier) {
+        NavigationDrawerHeader(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+        )
+        for (navItem in navigationItemContentList) {
+            NavigationDrawerItem(
+                modifier = Modifier.padding(horizontal = 16.dp),
+                label = {
+                    Text(
+                        text = navItem.text,
+                    )
+                },
+                icon = {
+                    Icon(
+                        painter = navItem.icon,
+                        contentDescription = navItem.text
+                    )
+                },
+                colors = NavigationDrawerItemDefaults.colors(
+                    unselectedContainerColor = Color.Transparent
+                ),
+                selected = selectedDestination == navItem.menuItemType,
+                onClick = { onTabPressed(navItem.menuItemType) }
+            )
+        }
+    }
+}
+
+@Composable
+fun NavigationDrawerHeader(
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier,
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        ParisLogo(modifier = Modifier.size(48.dp))
+
+    }
+}
+
+@Composable
+fun ParisLogo(
+    modifier: Modifier = Modifier,
+    color: Color = MaterialTheme.colorScheme.primary
+) {
+    Image(
+        painter = painterResource(R.drawable.ic_launcher_foreground),
+        contentDescription = stringResource(R.string.logo),
+        colorFilter = ColorFilter.tint(color),
+        modifier = modifier
+    )
 }
 
 @Composable
