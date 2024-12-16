@@ -46,7 +46,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_italian,
                     color = italian_color
                 )
-            )
+            ),
+            socialLink = R.string.place_2_social_link
         ),
         Place(
             id = 2L,
@@ -60,7 +61,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_italian,
                     color = italian_color
                 )
-            )
+            ),
+            socialLink = R.string.place_3_social_link
         ),
         Place(
             id = 3L,
@@ -74,7 +76,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_mexican,
                     color = mexican_color
                 )
-            )
+            ),
+            socialLink = R.string.place_4_social_link
         ),
         Place(
             id = 4L,
@@ -92,7 +95,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_japanese,
                     color = japanese_color
                 )
-            )
+            ),
+            socialLink = R.string.place_5_social_link
         ),
         Place(
             id = 5L,
@@ -106,7 +110,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_hawaiian,
                     color = hawaiian_color
                 )
-            )
+            ),
+            socialLink = R.string.place_6_social_link
         ),
         Place(
             id = 6L,
@@ -124,7 +129,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_balinese,
                     color = balinese_color
                 )
-            )
+            ),
+            socialLink = R.string.place_7_social_link
         ),
         Place(
             id = 7L,
@@ -143,7 +149,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_japanese,
                     color = japanese_color
                 )
-            )
+            ),
+            socialLink = R.string.place_8_social_link
         ),
 
 
@@ -162,7 +169,8 @@ object LocalPlacesDataProvider {
                     category = R.string.tab_coffee,
                     color = coffee_shop_color
                 )
-            )
+            ),
+            socialLink = R.string.place_9_social_link
         ),
         Place(
             id = 9L,
@@ -180,7 +188,8 @@ object LocalPlacesDataProvider {
                     category = R.string.category_food_brunch,
                     color = brunch_color
                 )
-            )
+            ),
+            socialLink = R.string.place_10_social_link
         )
     )
 
