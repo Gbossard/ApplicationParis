@@ -1,5 +1,6 @@
 package com.example.applicationparis.ui.screens
 
+import android.app.Activity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -20,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -64,6 +66,42 @@ fun ParisListOnlyContent(
             }
 
         }
+    }
+}
+
+@Composable
+fun ParisListAndDetailContent(
+    parisUiState: ParisUiState,
+    onPlaceCardPressed: (Place) -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val places = parisUiState.currentPlaces
+    Row(modifier = modifier) {
+        LazyColumn(
+            modifier = Modifier
+                .weight(1f)
+                .padding(
+                    end = 16.dp,
+                    top = 20.dp
+                ),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            items(places, key = { place -> place.id }) {place ->
+                ParisListItem(
+                    place = place,
+                    selected = parisUiState.currentSelectedPlace.id == place.id,
+                    onCardClick = {
+                        onPlaceCardPressed(place)
+                    }
+                )
+            }
+        }
+        val activity = LocalContext.current as Activity
+        ParisDetailsScreen(
+            parisUiState = parisUiState,
+            modifier = Modifier.weight(1f),
+            onBackPressed = { activity.finish() }
+        )
     }
 }
 

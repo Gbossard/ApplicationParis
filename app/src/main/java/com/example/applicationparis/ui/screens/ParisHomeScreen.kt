@@ -38,11 +38,13 @@ import com.example.applicationparis.R
 import com.example.applicationparis.data.MenuItemType
 import com.example.applicationparis.data.Place
 import com.example.applicationparis.ui.ParisUiState
+import com.example.applicationparis.ui.utils.ParisContentType
 import com.example.applicationparis.ui.utils.ParisNavigationType
 
 @Composable
 fun ParisHomeScreen(
     navigationType: ParisNavigationType,
+    contentType: ParisContentType,
     parisUiState: ParisUiState,
     onTabPressed: (MenuItemType) -> Unit,
     onPlaceCardPressed: (Place) -> Unit,
@@ -79,6 +81,7 @@ fun ParisHomeScreen(
         ) {
             ParisAppContent(
                 navigationType = navigationType,
+                contentType = contentType,
                 parisUiState = parisUiState,
                 onTabPressed = onTabPressed,
                 onPlaceCardPressed = onPlaceCardPressed,
@@ -89,6 +92,7 @@ fun ParisHomeScreen(
         if (parisUiState.isShowingHomepage) {
             ParisAppContent(
                 navigationType = navigationType,
+                contentType = contentType,
                 parisUiState = parisUiState,
                 onTabPressed = onTabPressed,
                 onPlaceCardPressed = onPlaceCardPressed,
@@ -109,6 +113,7 @@ fun ParisHomeScreen(
 @Composable
 fun ParisAppContent(
     navigationType: ParisNavigationType,
+    contentType: ParisContentType,
     parisUiState: ParisUiState,
     onTabPressed: (MenuItemType) -> Unit,
     onPlaceCardPressed: (Place) -> Unit,
@@ -129,11 +134,19 @@ fun ParisAppContent(
                     .fillMaxSize()
                     .background(MaterialTheme.colorScheme.inverseOnSurface)
             ) {
+                if (contentType == ParisContentType.LIST_AND_DETAIL) {
+                    ParisListAndDetailContent(
+                        parisUiState = parisUiState,
+                        onPlaceCardPressed = onPlaceCardPressed,
+                        modifier = Modifier.weight(1f).padding(horizontal = 16.dp)
+                    )
+                } else {
                     ParisListOnlyContent(
                         parisUiState = parisUiState,
                         onPlaceCardPressed = onPlaceCardPressed,
                         modifier = Modifier.weight(1f)
                     )
+                }
                 AnimatedVisibility(
                     visible = navigationType == ParisNavigationType.BOTTOM_NAVIGATION
                 ) {
