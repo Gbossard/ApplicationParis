@@ -64,8 +64,6 @@
 
 
 
-
-
     <string name="place_9_name">Annette K</string>
     <string name="place_9_description">ANNETTE K. est un bateau transformé en club de sport, de santé et de loisirs, situé sur la Seine à Paris. Découvrez sa piscine plein air, son coffee shop, son club, ses événements et ses services.</string>
     <string name="place_9_address">Port de Javel Bas, 75015 Paris</string>
@@ -75,4 +73,24 @@
     <string name="place_10_description">Notre café est torréfié à Paris. Notre équipe vous accueille avec le sourire parce qu’il fait toujours beau chez O Coffee. Grand classique australien, le café crème par excellence, mélange de notre “O Blend” et de lait frais français, pour vous donner le sourire.</string>
     <string name="place_10_address">23 rue de Lourmel, 75015 Paris</string>
     <string name="place_10_social_link">https://www.ocoffee.fr/</string>
+
+    <string name="place_11_name">Moonlight café</string>
+    <string name="place_11_description">Nos baristas talentueux transforment chaque latte en une petite œuvre d\'art. Venez découvrir nos créations et savourez un moment de douceur avec nous. Quel est votre motif préféré ? Tulip, rosette, swan?</string>
+    <string name="place_11_address">27 rue des Gravilliers, 75003 Paris</string>
+    <string name="place_11_social_link">https://www.instagram.com/moonlight.cafe.paris/</string>
+
+    <string name="place_12_name">Book Nook</string>
+    <string name="place_12_description">BKNK, alias Book Nook, s\'est allié avec la maison d\'édition Beta Publisher pour créer un lieu convivial et original regroupant un coffee shop, mais aussi les locaux de cette jeune maison d\'édition parisienne. Après tout, quoi de mieux qu\'un bon café, une petite pâtisserie et un excellent livre ?</string>
+    <string name="place_12_address">11 rue Blanche, 75009 Paris</string>
+    <string name="place_12_social_link">https://www.bknkparis.com/</string>
+
+    <string name="place_13_name">Dolci</string>
+    <string name="place_13_description">Temple à gourmandise - La gourmandise est né dans le jardin d\'Eden, des milliers d\'années plus tard, nous avons ouvert à Paris. Dolci. est le nouveau coffee shop hotspot au cœur de paris. Nous offrons des activités liées au monde du café, du matcha et du desserts. Des ateliers innovants et unique à paris. Création de laits végétaux, de lattes, de cocktails, et de desserts etc..</string>
+    <string name="place_13_address">160 rue Montmartre, 75002 Paris</string>
+    <string name="place_13_social_link">https://www.instagram.com/dolci.fr/</string>
+
+    <string name="place_14_name">Café Méricourt</string>
+    <string name="place_14_description">Café Méricourt, une expérience brunch pas comme les autres - un lieu où la passion d’une offre authentique et une hospitalité inégalée se rencontrent, promettant une expérience inoubliable pour tous ceux qui entrent. C\'est depuis juin 2017 Guy Alexander Griffin nous a ouvert les portes du Café Méricourt en nous proposant une carte gourmande et savoureuse. Une grande salle lumineuse, des baies vitrées donnant sur la rue, des chaises et tables en bois, une devanture couleur menthe à l\'eau. Bref, un coffee shop qui donne envie de s\'y attarder, tout en sirotant une citronnade maison accompagnée d\'un granola ou de pancakes moelleux à la fleur d\'oranger.</string>
+    <string name="place_14_address">22 rue de la Folie Méricourt, 75011 Paris</string>
+    <string name="place_14_social_link">https://www.cafemericourt.com/</string>
 </resources>

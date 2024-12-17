@@ -190,6 +190,70 @@ object LocalPlacesDataProvider {
                 )
             ),
             socialLink = R.string.place_10_social_link
+        ),
+        Place(
+            id = 10L,
+            name = R.string.place_11_name,
+            description = R.string.place_11_description,
+            address = R.string.place_11_address,
+            photo = R.drawable.moonlight_cafe,
+            placeCategory = MenuItemType.COFFEE,
+            category = listOf(
+                Category(
+                    category = R.string.tab_coffee,
+                    color = coffee_shop_color
+                )
+            ),
+            socialLink = R.string.place_11_social_link
+        ),
+        Place(
+            id = 11L,
+            name = R.string.place_12_name,
+            description = R.string.place_12_description,
+            address = R.string.place_12_address,
+            photo = R.drawable.booknook_cafe,
+            placeCategory = MenuItemType.COFFEE,
+            category = listOf(
+                Category(
+                    category = R.string.tab_coffee,
+                    color = coffee_shop_color
+                )
+            ),
+            socialLink = R.string.place_12_social_link
+        ),
+        Place(
+            id = 12L,
+            name = R.string.place_13_name,
+            description = R.string.place_13_description,
+            address = R.string.place_13_address,
+            photo = R.drawable.dolci_cafe,
+            placeCategory = MenuItemType.COFFEE,
+            category = listOf(
+                Category(
+                    category = R.string.tab_coffee,
+                    color = coffee_shop_color
+                )
+            ),
+            socialLink = R.string.place_13_social_link
+        ),
+        Place(
+            id = 13L,
+            name = R.string.place_14_name,
+            description = R.string.place_14_description,
+            address = R.string.place_14_address,
+            photo = R.drawable.cafe_mericourt,
+            placeCategory = MenuItemType.COFFEE,
+            category = listOf(
+                Category(
+                    category = R.string.tab_coffee,
+                    color = coffee_shop_color
+                ),
+                Category(
+                    category = R.string.category_food_brunch,
+                    color = brunch_color
+                )
+            ),
+            socialLink = R.string.place_14_social_link
         )
     )
 
