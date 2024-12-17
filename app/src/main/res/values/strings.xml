@@ -7,8 +7,8 @@
 
     <string name="tab_restaurants">Restaurants</string>
     <string name="tab_coffee">Coffee Shop</string>
-    <string name="tab_museum">Musée</string>
-    <string name="tab_park">Parc</string>
+    <string name="tab_museum">Musées</string>
+    <string name="tab_park">Parcs</string>
     <string name="tab_shopping">Magasins</string>
 
     <string name="category_food_korean">Coréen</string>
