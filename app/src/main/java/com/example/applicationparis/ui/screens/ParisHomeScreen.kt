@@ -61,6 +61,21 @@ fun ParisHomeScreen(
             menuItemType = MenuItemType.COFFEE,
             icon = painterResource(R.drawable.local_cafe_24dp),
             text = stringResource(id = R.string.tab_coffee)
+        ),
+        NavigationItemContent(
+            menuItemType = MenuItemType.MUSEUM,
+            icon = painterResource(R.drawable.local_palette_24dp),
+            text = stringResource(id = R.string.tab_museum)
+        ),
+        NavigationItemContent(
+            menuItemType = MenuItemType.PARK,
+            icon = painterResource(R.drawable.local_park_24dp),
+            text = stringResource(id = R.string.tab_park)
+        ),
+        NavigationItemContent(
+            menuItemType = MenuItemType.SHOPPING,
+            icon = painterResource(R.drawable.local_shopping_bag_24dp),
+            text = stringResource(id = R.string.tab_shopping)
         )
     )
     if (navigationType == ParisNavigationType.PERMANENT_NAVIGATION_DRAWER) {
