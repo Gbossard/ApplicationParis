@@ -254,7 +254,129 @@ object LocalPlacesDataProvider {
                 )
             ),
             socialLink = R.string.place_14_social_link
-        )
+        ),
+
+
+
+
+
+        Place(
+            id = 14L,
+            name = R.string.place_15_name,
+            description = R.string.place_15_description,
+            address = R.string.place_15_address,
+            photo = R.drawable.musee_orsay,
+            placeCategory = MenuItemType.MUSEUM,
+            socialLink = R.string.place_15_social_link
+        ),
+        Place(
+            id = 15L,
+            name = R.string.place_16_name,
+            description = R.string.place_16_description,
+            address = R.string.place_16_address,
+            photo = R.drawable.musee_louvre,
+            placeCategory = MenuItemType.MUSEUM,
+            socialLink = R.string.place_16_social_link
+        ),
+        Place(
+            id = 16L,
+            name = R.string.place_17_name,
+            description = R.string.place_17_description,
+            address = R.string.place_17_address,
+            photo = R.drawable.musee_orangerie,
+            placeCategory = MenuItemType.MUSEUM,
+            socialLink = R.string.place_17_social_link
+        ),
+        Place(
+            id = 17L,
+            name = R.string.place_18_name,
+            description = R.string.place_18_description,
+            address = R.string.place_18_address,
+            photo = R.drawable.musee_quai_branly,
+            placeCategory = MenuItemType.MUSEUM,
+            socialLink = R.string.place_18_social_link
+        ),
+
+
+
+        Place(
+            id = 18L,
+            name = R.string.place_19_name,
+            description = R.string.place_19_description,
+            address = R.string.place_19_address,
+            photo = R.drawable.jardin_luxembourg,
+            placeCategory = MenuItemType.PARK,
+            socialLink = R.string.place_19_social_link
+        ),
+        Place(
+            id = 19L,
+            name = R.string.place_20_name,
+            description = R.string.place_20_description,
+            address = R.string.place_20_address,
+            photo = R.drawable.parc_buttes_chaumont,
+            placeCategory = MenuItemType.PARK,
+            socialLink = R.string.place_20_social_link
+        ),
+        Place(
+            id = 20L,
+            name = R.string.place_21_name,
+            description = R.string.place_21_description,
+            address = R.string.place_21_address,
+            photo = R.drawable.parc_monceau,
+            placeCategory = MenuItemType.PARK,
+            socialLink = R.string.place_21_social_link
+        ),
+
+
+
+
+        Place(
+            id = 21L,
+            name = R.string.place_22_name,
+            description = R.string.place_22_description,
+            address = R.string.place_22_address,
+            photo = R.drawable.galeries_lafayette,
+            placeCategory = MenuItemType.SHOPPING,
+            socialLink = R.string.place_22_social_link
+        ),
+        Place(
+            id = 22L,
+            name = R.string.place_23_name,
+            description = R.string.place_23_description,
+            address = R.string.place_23_address,
+            photo = R.drawable.le_bon_marche,
+            placeCategory = MenuItemType.SHOPPING,
+            socialLink = R.string.place_23_social_link
+        ),
+        Place(
+            id = 23L,
+            name = R.string.place_24_name,
+            description = R.string.place_24_description,
+            address = R.string.place_24_address,
+            photo = R.drawable.samaritaine,
+            placeCategory = MenuItemType.SHOPPING,
+            socialLink = R.string.place_24_social_link
+        ),
+        Place(
+            id = 24L,
+            name = R.string.place_25_name,
+            description = R.string.place_25_description,
+            address = R.string.place_25_address,
+            photo = R.drawable.bhv,
+            placeCategory = MenuItemType.SHOPPING,
+            socialLink = R.string.place_25_social_link
+        ),
+        Place(
+            id = 25L,
+            name = R.string.place_26_name,
+            description = R.string.place_26_description,
+            address = R.string.place_26_address,
+            photo = R.drawable.uniqlo,
+            placeCategory = MenuItemType.SHOPPING,
+            socialLink = R.string.place_26_social_link
+        ),
+
+
     )
 
     fun get(id: Long): Place? {

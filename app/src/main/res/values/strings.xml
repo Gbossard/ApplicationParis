@@ -7,9 +7,9 @@
 
     <string name="tab_restaurants">Restaurants</string>
     <string name="tab_coffee">Coffee Shop</string>
-    <string name="tab_museum">Museum</string>
-    <string name="tab_park">Park</string>
-    <string name="tab_shopping">Shopping</string>
+    <string name="tab_museum">Musée</string>
+    <string name="tab_park">Parc</string>
+    <string name="tab_shopping">Magasins</string>
 
     <string name="category_food_korean">Coréen</string>
     <string name="category_food_asian">Asiatique</string>
@@ -93,4 +93,71 @@
     <string name="place_14_description">Café Méricourt, une expérience brunch pas comme les autres - un lieu où la passion d’une offre authentique et une hospitalité inégalée se rencontrent, promettant une expérience inoubliable pour tous ceux qui entrent. C\'est depuis juin 2017 Guy Alexander Griffin nous a ouvert les portes du Café Méricourt en nous proposant une carte gourmande et savoureuse. Une grande salle lumineuse, des baies vitrées donnant sur la rue, des chaises et tables en bois, une devanture couleur menthe à l\'eau. Bref, un coffee shop qui donne envie de s\'y attarder, tout en sirotant une citronnade maison accompagnée d\'un granola ou de pancakes moelleux à la fleur d\'oranger.</string>
     <string name="place_14_address">22 rue de la Folie Méricourt, 75011 Paris</string>
     <string name="place_14_social_link">https://www.cafemericourt.com/</string>
+
+
+
+    <string name="place_15_name">Musée d\'Orsay</string>
+    <string name="place_15_description">Le Musée d\’Orsay, connu pour ses collections de peinture Impressionniste et d\'Art Nouveau, abrite aussi des objets de sculpture, d\’art décoratif et de photographie datant de 1848 à 1914. Le bâtiment, une ancienne gare de train inaugurée pour l\’exposition Universelle de 1900, est magnifique et vaut également une visite. </string>
+    <string name="place_15_address">1 rue de la Légion d\'Honneur, 75007 Paris</string>
+    <string name="place_15_social_link">https://www.musee-orsay.fr/fr</string>
+
+    <string name="place_16_name">Musée du Louvre</string>
+    <string name="place_16_description">Ancien palais des rois, le Louvre est intimement lié à l\’histoire de France depuis huit siècles. Conçu dès sa création en 1793 comme un musée universel, ses collections, qui figurent parmi les plus belles au monde, couvrent plusieurs millénaires et un territoire qui s\’étend de l\’Amérique aux frontières de l\’Asie. Le Louvre abrite huit départements. Les Antiquités égyptiennes, les Antiquités orientales et les Antiquités grecques, étrusques et romaines, côtoient des collections plus modernes comme celles des départements des Peintures, des Sculptures, des Objets d\'art, des Arts graphiques et des Arts de l\’Islam. Au total, 35 000 œuvres sont exposées, dont des chefs-d’œuvre mondialement connus comme la Victoire de Samothrace, le Scribe accroupi, les Taureaux ailés de Khorsabad, La Joconde, les Esclaves de Michel-Ange ou encore les appartements Napoléon-III.</string>
+    <string name="place_16_address">99 rue de Rivoli, 75001 Paris</string>
+    <string name="place_16_social_link">https://www.louvre.fr/</string>
+
+    <string name="place_17_name">Musée de l\'Orangerie</string>
+    <string name="place_17_description">Situé dans le jardin des Tuileries, ce musée est surtout connu pour les Nymphéas de Monet, mais on peut y admirer toute une collection de peintures impressionnistes et postimpressionnistes.</string>
+    <string name="place_17_address">Jardin des Tuileries - Côté Seine Place de la Concorde, 75001 Paris</string>
+    <string name="place_17_social_link">https://www.musee-orangerie.fr/fr</string>
+
+    <string name="place_18_name">Musée du Quai Branly</string>
+    <string name="place_18_description">A quelques mètres de la tour Eiffel, dans un écrin végétal foisonnant et une architecture contemporaine surprenante, voyagez au cœur d\’une des plus importantes collections d’arts  non occidentaux. L\’Asie, l\’Océanie, l\’Afrique et les Amériques se révèlent à vous. Cette importante collection en fait un lieu incontournable des cultures des arts non occidentaux. Un véritable lieu de vie avec ses expositions, son théâtre, ses restaurants…</string>
+    <string name="place_18_address">37 Quai Branly, 75007 Paris</string>
+    <string name="place_18_social_link">https://www.quaibranly.fr/fr/</string>
+
+
+
+    <string name="place_19_name">Les jardins du Luxembourg</string>
+    <string name="place_19_description">Les Jardins du Luxembourg, inspirés des jardins Boboli de Florence, sont un superbe espace vert en plein centre-ville et le parc préféré des Parisiens. En vous y promenant, profitez des jardins français et anglais, de l\’Orangerie, du grand bassin octogonal, des statues ainsi que des serres, des ruches, et du verger.</string>
+    <string name="place_19_address">rue de Médicis, Rue de Vaugirard, 75006 Paris</string>
+    <string name="place_19_social_link">https://parisjetaime.com/eng/culture/jardin-du-luxembourg-p1063</string>
+
+    <string name="place_20_name">Parc des Buttes-Chaumont</string>
+    <string name="place_20_description">Le parc des Buttes-Chaumont est le plus escarpé et le plus grand des jardins de la Ville de Paris. Il a été inauguré le 1er avril 1867, à l\’occasion de l\’exposition universelle de Paris. C\'est un chef-d\’œuvre de l\’art paysager sous Napoléon III. Avec ses 25 hectares, le parc est une ode à la France et à ses paysages, des falaises d\’Étretat aux prairies alpines et bosquets méditerranéens reconstitués de toutes pièces. Une grotte se situe à l\’entrée d’une carrière souterraine. Pour des raisons techniques, l\’eau alimentant la grande cascade de la grotte peut être coupée, notamment d\’avril à septembre, pour l\’arrosage du parc.</string>
+    <string name="place_20_address">1 rue Botzaris, 75019 Paris</string>
+    <string name="place_20_social_link">https://www.paris.fr/lieux/parc-des-buttes-chaumont-1757</string>
+
+    <string name="place_21_name">Parc Monceau</string>
+    <string name="place_21_description">Le site de Mousseau est acquis par le duc de Chartres (1747-1793) en 1769. Son pavillon, dit Folie de Chartres, est élevé au centre d’un jardin à la française, puis de style anglo-chinois dès 1773. De petits temples antiques et gothiques réalisés par l\’architecte paysagiste Carmontelle (1717-1806) en témoignent. Le jardin est amputé en 1787 lors de la construction du mur des Fermiers généraux. La barrière de Chartres, rotonde actuelle, en est un des vestiges. Adolphe Alphand (1817-1891), ingénieur des ponts et chaussées, aménage définitivement le jardin à l\’anglaise au Second Empire (1861). Prisé par les artistes, le parc s\’enrichit d’une statuaire dédiée aux écrivains et aux musiciens.</string>
+    <string name="place_21_address">35 Boulevard de Courcelles, 75008 Paris</string>
+    <string name="place_21_social_link">https://parisjetaime.com/eng/culture/parc-monceau-p3553</string>
+
+
+
+    <string name="place_22_name">Galeries Lafayette Paris Haussmann</string>
+    <string name="place_22_description">Les Galeries Lafayette Haussmann sont un grand magasin parisien situé boulevard Haussmann dans le 9e arrondissement. Il s\'agit du plus vaste grand magasin d\'Europe et du second au niveau mondial après Macy\’s Herald Square1. En 2014, il réalise 1,8 milliard d\'euros de chiffre d\'affaires2, devançant Harrods à Londres, Bloomingdale\'s à New York et Isetan à Tokyo3, redevenant donc le premier grand magasin du monde en chiffre d\'affaires. Il appartient à la branche « Grands Magasins » du Groupe Galeries Lafayette.</string>
+    <string name="place_22_address">40 Boulevard Haussmann, 75009 Paris</string>
+    <string name="place_22_social_link">https://haussmann.galerieslafayette.com/</string>
+
+    <string name="place_23_name">Le Bon Marché - Rive Gauche</string>
+    <string name="place_23_description">Lieu de vie et de vente, Le Bon Marché se dessine comme un vivier créatif pensé dans un esprit résolument contemporain. Ses espaces expriment sa vision des tendances et définissent un art de vivre inédit. Depuis son invention en 1852 par Aristide Boucicaut, Le Bon Marché accompagne la vitalité créative d’une Rive Gauche devenue légendaire. Mêlant l\’art à la mode, le design à la beauté et à la gastronomie, le magasin cultive une identité singulière que nous vous invitons à venir découvrir.</string>
+    <string name="place_23_address">24 Rue de Sevres, 75007 Paris</string>
+    <string name="place_23_social_link">https://www.lebonmarche.com/</string>
+
+    <string name="place_24_name">Samaritaine</string>
+    <string name="place_24_description">La Samaritaine est un grand magasin situé à Paris entre la rue de Rivoli et la Seine, à l\'aplomb du pont Neuf dans le 1er arrondissement de Paris. Fondée en 1870 par Ernest Cognacq, La Samaritaine, devenue déficitaire, ferme en 2005 pour réaménagement de ses bâtiments et mise aux normes de sécurité. La Samaritaine reste, jusqu\'à sa fermeture, le grand magasin parisien le plus important par sa taille, avec ses quatre magasins totalisant une surface de vente de 48 000 m2.</string>
+    <string name="place_24_address">9 Rue de la Monnaie, 75001 Paris</string>
+    <string name="place_24_social_link">https://www.dfs.com/fr/samaritaine</string>
+
+    <string name="place_25_name">Le BHV Marais</string>
+    <string name="place_25_description">Situé au cœur de l’historique quartier du Marais, LE BHV MARAIS reste le magasin emblématique. Niché juste au niveau de l’épicentre Rive Droite/Rive Gauche, cette institution reste le repère des bricolos créatifs, des parisiens Rive Gauche, des branchés de l\’Hôtel de ville, des cordons bleus arty… Un bazar version luxe, où l\’on peut trouver de tout. De la sauteuse Lagostina, au lave-vaisselle SMEG en passant par un matelas dernier cri Bultex. L\’adresse immanquable des esthètes et des épicuriens….</string>
+    <string name="place_25_address">52 Rue de Rivoli, 75004 Paris</string>
+    <string name="place_25_social_link">https://www.bhv.fr/</string>
+
+    <string name="place_26_name">Uniqlo - Opéra</string>
+    <string name="place_26_description">Uniqlo est une marque commerciale de Fast Retailing, groupe japonais de conception, confection et distribution de vêtements. En juin 2024, Uniqlo possède 28 magasins en France, ce qui en fait le plus grand nombre de magasins Uniqlo en Europe. Les premières boutiques ouvrent dans le centre commercial Les Quatre Temps à la Défense, près de l\'Opéra Garnier (9e arrondissement de Paris), dans les centres commerciaux So Ouest à Levallois-Perret et Beaugrenelle (15e arrondissement de Paris), dans le Marais (4e arrondissement à Paris) et à Montparnasse (6e arrondissement aussi à Paris) ainsi qu\'au centre commercial Belle Épine.</string>
+    <string name="place_26_address">17 Rue Scribe, 75009 Paris</string>
+    <string name="place_26_social_link">https://www.uniqlo.com/fr/fr/</string>
+
 </resources>
